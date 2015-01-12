@@ -1,0 +1,311 @@
+.body{
+	background-color: yellow;
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+	position: relative;
+	font-family: sans-serif;
+}
+
+
+.title{
+	text-align: center;
+	background-color: green;
+	height:80px;
+	font-size: 30px;
+	border-bottom: 2px solid #ffcc00; 
+
+}
+
+.input{
+	height: 600px;
+	width:600px;
+	position: absolute;
+	margin left: 0px;
+	margin-top: 0px;
+	
+}
+
+
+
+h1{
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.in_box{
+	height:400;
+	width:500;
+	background-color: #e3e3e3;
+	position: absolute;
+	left : 15px;
+	margin-top: 10px;
+}
+
+#editor{
+	height:395;
+	width:500;
+	background-color: #1d2521;
+	position: absolute;
+	left : 25px;
+	margin-top: 10px;
+	border: 1px solid #3D3D3D;
+
+}
+.sidebar{
+	width : 400px;
+	height : 600px;
+	background-color: #3D3C3A;
+	position: absolute;
+	top: 82px;
+	right: 0px;
+	background-image: url("../images/sidebar.png");
+	border-left:1px solid white;
+
+}
+
+.output{
+
+	height:400px;
+	width:1000px;
+	background-color: #774444;
+	background-image: url("../images/output.png");
+	position: absolute;
+	top: 600px;
+	border-top: 2px solid #ffcc00; 
+}
+
+.output_title{
+	height:35px;
+	width: 1000px;
+	
+	margin: 20px 10px 0px 0px;
+	top:610px;
+	background-image: url("../images/out_title.png");
+
+	}
+.output_title h1 , .input_title h1 {
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.result{
+	width :600px;
+	height: 300px;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: #1d2521;
+	color: white;
+	color: white;
+	font-size: 15px;
+	font-family:consolas, monospace;
+
+}
+
+.result_input{
+	width :250px;
+	height: 300px;
+	position: absolute;
+	margin-left: 700px;
+	margin-top: 20px;
+	background-color: #1d2521;
+	color: white;
+	font-size: 15px;
+	font-family:consolas, monospace;
+
+}
+
+.btn1{
+	position: absolute;
+	width : 500px;
+	background-color: #1D4458;
+	margin-top: 420px;
+	margin-left: 25px;
+}
+
+.btn2{
+	position: absolute;
+	width : 497px;
+	background-color: #1D4458;
+	margin-top: 480px;
+	margin-left: 25px;
+	border-top: 1px solid gray;
+	border-left: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-right: 2px solid gray;
+
+}
+
+.btn2_title{
+	position: absolute;
+	width : 494px;
+	height: 25px;
+	background-color: #1D4458;
+	margin-top: 455px;
+	margin-left: 25px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding-top: 2px;
+	padding-left: 3px;
+	border: 2px solid gray;
+}
+
+.input_title{
+	height:50px;
+	width: 600px;
+	background-color: #662244;
+}
+
+input{
+	
+
+
+}
+
+#clrbtn , #runbtn , #savebtn , #stpbtn{
+		font-weight: bolder;
+		font-size: 15px;
+		margin-right: -3px;
+		background-color: #1D4458;
+		width : 124px;
+
+}
+
+#upldbtn{
+		font-weight: bolder;
+		font-size: 15px;
+		margin-right: -1px;
+		background-color: #1D4458;
+		width : 124px;
+		float: right;
+}
+
+#browsebtn {
+		font-weight: bolder;
+		font-size: 15px;
+		margin-right: -3px;
+		background-color: #1D4458;
+		width : 331px;
+}
+
+.input_img , .output_img{
+	float: left;
+
+}
+
+.in_title{
+	font-size: 20px;
+	font-weight: bold;
+	float : right;
+	margin-right: 250px;
+	padding-top: 5px;
+}
+
+.out_title{
+	font-size: 20px;
+	font-weight: bold;
+	float : left;
+	margin-left: 50px;
+	padding-top: 5px;
+}
+
+.reg_txt{
+	width : 50px;
+	height : 28px;
+	margin-left: 100px;
+	margin-top: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-left: 8px;
+	position: absolute;
+}
+
+.reg_lbl{
+	width : 90px;
+	height : 28px;
+	margin-left: 5px;
+	margin-top: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-left: 8px;
+	position: absolute;
+}
+.reg_div{
+	width:160px;
+	height: 400px;
+	margin-top: 19px;
+	margin-left: 20px;
+	
+	float: left;
+
+}
+
+.reg_set{
+	margin-top: 0px;
+	width: 150px;
+	height: 30px;
+	position: relative;
+}
+
+.toggle{
+	background-color: #edeae1;
+	width:200px;
+	height:473px;
+	margin-left: 180px;
+	margin-top: 19px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: solid 1px black;
+
+}
+
+.ins_txt{
+	font-size: 15px;
+	margin-left: 142px;
+	margin-top: -23px;
+	width:50px;
+	font-weight: bold;
+	height: 28px;
+	padding-top: 5px;
+	padding-left: 8px;
+}
+
+.memory_div{
+	width:200px;
+	height:100px;
+}
+
+.memory_txt{
+	width:187px;
+	height:250px;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+
+}
+.inbtn{
+	font-weight: bolder;
+	font-size: 15px;
+	margin-left: 3px;
+	background-color: #1D4458;
+	width : 189px;
+	margin-top: 5px;
+
+}
+
+.setbtn{
+	font-weight: bolder;
+	font-size: 15px;
+	margin-left: 3px;
+	background-color: #1D4458;
+	width : 189px;
+	margin-top: 180px;
+
+}

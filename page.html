@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>ARM_Run.com</title>
+		<link rel = "stylesheet" type="text/css" href = "css/page.css" >
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		
+	</head>
+
+
+	<body>
+		<div class = "body">
+		<div class = "title">
+			<img src = images/main_title.png>
+		</div>
+
+		<div class = "input">
+			<img class = "input_img" , src = images/input.png>
+				<div id="editor" type = "text"> Enter code here</div>
+				<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+                <script src="src/theme-mono_industrial.js" type="text/javascript" charset="utf-8"></script>
+                <script src="src/mode-assembly_x86.js" type="text/javascript" charset="utf-8"></script>
+                <script>
+                    var editor = ace.edit("editor");
+                    editor.setTheme("ace/theme/mono_industrial");
+                    var assembly_x86Mode = require("ace/mode/assembly_x86").Mode;
+                    editor.getSession().setMode(new assembly_x86Mode());
+                </script>
+               
+               
+			<div class = "btn1">
+			<input id = "clrbtn" type = "button" value = "Clear all" >
+			<input id = "runbtn" type = "button" value = "Compile & Run">
+			<input id = "savebtn" type = "submit" value = "Save">
+			<input id = "stpbtn" type = "button" value = "Run by Steps">
+			</div>
+
+			<div class = "btn2_title">
+				Browse a File
+			</div>
+			<div class = "btn2">
+			<input id = "browsebtn" type = "file" name="uploadfile">
+			<input id = "upldbtn" type = "submit" value = "Upload" onclick="upload()">
+
+			</div>
+		</div>
+		<div class = "sidebar">
+			<div class = "reg_div">
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 00</textarea>
+				<textarea class = "reg_txt"  id = "reg_00" >00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 01</textarea>
+				<textarea class = "reg_txt" id = "reg_01">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 02</textarea>
+				<textarea class = "reg_txt" id = "reg_02">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 03</textarea>
+				<textarea class = "reg_txt" id = "reg_03">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 04</textarea>
+				<textarea class = "reg_txt" id = "reg_04">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 05</textarea>
+				<textarea class = "reg_txt" id = "reg_05">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 06</textarea>
+				<textarea class = "reg_txt" id = "reg_06">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 07</textarea>
+				<textarea class = "reg_txt" id = "reg_07">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 08</textarea>
+				<textarea class = "reg_txt" id = "reg_08">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 09</textarea>
+				<textarea class = "reg_txt" id = "reg_09">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 10</textarea>
+				<textarea class = "reg_txt" id = "reg_10">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 11</textarea>
+				<textarea class = "reg_txt" id = "reg_11">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 12</textarea>
+				<textarea class = "reg_txt" id = "reg_12">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 13</textarea>
+				<textarea class = "reg_txt" id = "reg_13">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 14</textarea>
+				<textarea class = "reg_txt" id = "reg_14">00</textarea>
+				</div>
+				<div class = "reg_set">
+				<textarea class = "reg_lbl" disabled = "disabled">Reg 15</textarea>
+				<textarea class = "reg_txt" id = "reg_15">00</textarea>
+				</div>
+			</div>
+
+			<div class = "toggle"><b>
+					<form class = "num_type" id="num_type_id">
+  					<input class = "toggle_btn" type="radio" name="num_type" value="decimal" />Decimal
+					<br>
+  					<input class = "toggle_btn" type="radio" name="num_type" value="hexa_decimal" />Hexa Decimal
+ 					<br>
+  					<input class = "toggle_btn" type="radio" name="num_type" value="binary" />Binary
+  					</form>
+					<div class = "inst_div">Instruction Count:
+					</div>
+					<textarea class = "ins_txt" id = "ins">00</textarea>
+					<br><br>
+					<div class = "memory_div" > Memory Values : 
+					<textarea class = "memory_txt" id = "memory_txt_id"></textarea>	
+					</div></b>
+					
+					<input class = "setbtn" id = "setbtn_id" type = "button" value = "Set all values"></input>
+					<br>
+					<input class = "inbtn" id = "inbtn_id" type = "button" value = "Initialize all"></input>
+
+			</div>
+				
+		</div>
+		<div class = "output">
+			
+			<div class = "output_title">
+				<div class = "out_title">Output</div>
+				<div class = "in_title">Input</div>
+			</div>
+			<textarea class ="result" id = "result" placeholder = "This is your Output"></textarea>
+			<textarea id = "result_input" class ="result_input" placeholder = "Enter your Input here"></textarea>
+
+		</div>
+	</div>
+	</body>
+</html>
